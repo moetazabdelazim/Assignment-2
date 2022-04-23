@@ -1,0 +1,10 @@
+<ul>
+    <% for (var i = 0; i < test.length ; i++) { %>
+        <li><a href=<%= test[i].link %>><%= test[i].name %></a><br> 
+            <form action="/deleted" method="POST">
+                <button type="submit" >X</button>
+                <input type="text" id="name" name="name" value='<%= test[i].name %>'><br>
+           </form>
+        </li>
+    <% } %>
+</ul>
